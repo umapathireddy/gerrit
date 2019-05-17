@@ -1,0 +1,12 @@
+- hosts: localhost
+  vars:
+    db_type:   # options: H2, MYSQL, PSQL, ORACLE
+    db_name: 
+    db_host:  #"{{gerrit_db_host}}" # assumes this alias is in the inventory file
+    db_user:  #"root"
+    db_password: #"password"
+  roles:
+    - common
+#   - mysql
+    - gerrit
+
